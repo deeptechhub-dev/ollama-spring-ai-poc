@@ -1,0 +1,17 @@
+Spring AI provides abstractions for integrating artificial intelligence
+models into Spring applications.
+
+Spring AI supports ChatModel implementations for interacting with
+large language models.
+
+EmbeddingModel converts text into numerical vector representations
+called embeddings.
+
+VectorStore stores document embeddings and performs semantic
+similarity searches.
+
+ChatMemory helps applications maintain conversation context by
+storing and retrieving previous messages.
+
+Retrieval Augmented Generation, also known as RAG, retrieves relevant
+external knowledge and provides it to a language model as context.

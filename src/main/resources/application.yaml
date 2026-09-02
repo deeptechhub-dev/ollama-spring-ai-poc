@@ -7,6 +7,9 @@ spring:
       chat:
         options:
           model: qwen3:0.6b
+      embedding:
+        options:
+          model: nomic-embed-text
     chat:
       memory:
         repository:
