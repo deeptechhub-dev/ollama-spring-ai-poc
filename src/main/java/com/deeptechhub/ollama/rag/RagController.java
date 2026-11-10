@@ -36,6 +36,16 @@ public class RagController {
         );
     }
 
+    @PostMapping("/ingest-in-chunks/spring-ai")
+    public Map<String, String> ingestSpringKnowledgeInChunks() {
+        knowledgeIngestionService.ingestSpringKnowledgeInChunks();
+
+        return Map.of(
+                "message",
+                "Spring AI knowledge ingested successfully"
+        );
+    }
+
     @GetMapping("/search")
     public List<Document> search(@RequestParam String query) {
         return ragService.search(query);
